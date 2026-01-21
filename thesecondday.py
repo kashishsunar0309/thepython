@@ -49,3 +49,50 @@ while len(guests) > 2:
     print(f"Dear {guests[1]},you are still invited for dinner!")
 # final list of guest who are invited
 print(f"Final guest list: {guests}")
+# buffet
+buffet_foods = ('pizza', 'pasta', 'salad', 'soup', 'bread')
+print("The buffet offers:")
+for food in buffet_foods:
+    print(f"-{food}")
+print("\n Trying to change an item....")
+# Try to modify one item (this will cause an error)
+try:
+    buffet_foods[0] = 'burger'
+except TypeError as e:
+    print(f"Error:{e}")
+print("Tuples are immutable and cannot be modified!")
+# Replace the menu by rewriting the tuple
+print('\n The resturant is changing its menu...')
+buffet_foods = ('tacos', 'burritos', 'salad', 'soup', 'rice')
+print('\n The new buffet foods:')
+for food in buffet_foods:
+    print(f"-{food}")
+# code review
+x = 5
+y = 10
+if x > y:
+    print("\n x is greater")
+else:
+    print("\n y is greater")
+# condition Tests
+# test 1:String equality(True)
+car = 'subaru'
+print('\n Is car == "subaru"? I predict True.')
+print(car == 'subaru')
+# TESt 2:String inequality(False)
+print("\n Is car == 'audi' ? I predict  False.")
+print(car == 'audi')
+# test 3:String equality with different case(False)
+print("\n Is car == 'Subaru'? I predict False.")
+print(car == "Subaru")
+# test 3:String inequality(True)
+print("\n Is car ==\== 'Toyota'? I predict True.")
+print(car != 'toyota')
+# Test5 : Numerical equality (True)
+age = 25
+print("\n Is age = 25? I predict True.")
+print(age == 25)
+# Test5 : Numerical inequality (False)
+age = 25
+print("\n Is age = 30? I predict False.")
+print(age == 30)
