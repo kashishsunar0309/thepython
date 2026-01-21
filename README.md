@@ -6,7 +6,7 @@ It’s part of my journey learning Python step by step.
 ## Contents
 - Working with lists (names, cars, guest list)
 - Using f-strings for greetings
-- Practicing `.insert()`, `.append()`, and `.pop()`
+- Practicing "python basic"
 - Building small scripts to reinforce concepts
 
 ## Goals
