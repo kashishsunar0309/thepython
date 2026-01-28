@@ -57,3 +57,53 @@ print('money heist' in tvshow)
 show = "viking"
 if show not in tvshow:
     print(f"{show.title()},this tvshow the user doesn't see yet")
+#5.3 statement of eric
+alien_color = 'green'
+if alien_color == 'green':
+    print('You just earned 5 points!')
+print("===================")    
+
+alien_color= input('enter the color name : ')
+if (alien_color== 'green'):
+    print('you get 5 point')
+elif(alien_color != 'green'):
+    print(" you get 10 point")
+print('==== new condition ====')
+alien_color= input('enter the color name : ')
+if (alien_color== 'green'):
+    print('you get 5 point')
+elif(alien_color == 'yellow'):
+    print(" you get 10 point")
+elif (alien_color == 'red'):
+    print("you get 15 point")
+print('===== new condition =========')
+age=int(input('enter your age please!:' ))
+if age < 2:
+    print('that the person is baby')
+elif age >= 2 and age < 4:  # or just: elif age < 4:
+    print('that the person is a toddler')
+elif age >= 4 and age < 13:  # or just: elif age < 13:
+    print('that the person is a kid')
+elif age >= 13 and age < 20:  # or just: elif age < 20:
+    print('that the person is a teenager')
+elif age >= 20 and age < 65:  # or just: elif age < 65:
+    print('that the person is an adult')
+else:  # age >= 65
+    print('that the person is an elder')
+print("==== new condition =====")
+favorite_fruits = ['apple', 'mango', 'banana']
+
+if 'apple' in favorite_fruits:
+    print('You really like apples!')
+    
+if 'mango' in favorite_fruits:
+    print('You really like mangoes!')
+    
+if 'banana' in favorite_fruits:
+    print('You really like bananas!')
+    
+if 'papaya' in favorite_fruits:
+    print('You really like papayas!')
+    
+if 'orange' in favorite_fruits:
+    print('You really like oranges!')
