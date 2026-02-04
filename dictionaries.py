@@ -79,3 +79,40 @@ for person1, language in name1.items():
         print(f"You aren't allowed to poll with this: {person1.title()}")
     else:
         print(f"Thank you for polling: {person1.title()}")
+        
+print('6-7 dictorinaries from python course')
+# Create three separate dictionaries for each person
+person_1 = {
+    'first_name': 'Kashish',
+    'last_name': 'Sunar',
+    'age': 20,
+    'city': 'Kathmandu',
+}
+
+person_2 = {
+    'first_name': 'Deepson',
+    'last_name': 'Shreepali',
+    'age': 12,
+    'city': 'Nepalgunj',
+}
+
+person_3 = {
+    'first_name': 'Tara',
+    'last_name': 'Kalam',
+    'age': 40,
+    'city': 'Kohalpur',
+}
+
+# Store all three dictionaries in a list called people
+people = [person_1, person_2, person_3]
+
+# Loop through the list of people
+for person in people:
+    full_name = f"{person['first_name']} {person['last_name']}"
+    age = person['age']
+    city = person['city']
+    
+    print(f"\tFull Name: {full_name}")
+    print(f"\tAge: {age}")
+    print(f"\tCity: {city}")
+    print()
