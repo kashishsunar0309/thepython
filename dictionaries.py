@@ -116,3 +116,26 @@ for person in people:
     print(f"\tAge: {age}")
     print(f"\tCity: {city}")
     print()
+#Create dicti for different pets
+pet1={
+    
+    'animal':'dog',
+    'owner':'Sarah'
+}
+pet2={
+    'animal':'cat',
+    'owner':'Micheal'
+}
+pet3={
+    'animal':'hamster',
+    'owner':'Emily'
+}
+pet4={
+    'animal':'parrot',
+    'owner':'David'
+}
+pets=[pet1,pet2,pet3,pet4]
+for pet in pets:
+    print("\n Pet Information")
+    print(f"Animal: {pet['animal']}")
+    print(f"Owner:{pet['owner']}")
