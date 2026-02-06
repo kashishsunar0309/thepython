@@ -1,6 +1,5 @@
 print('======= 6-1 to 3 from dictoinaries ======')
 
-
 person = {
     'first_name': 'Kashish',
     'last_name': 'Sunar',
@@ -138,4 +137,31 @@ pets=[pet1,pet2,pet3,pet4]
 for pet in pets:
     print("\n Pet Information")
     print(f"Animal: {pet['animal']}")
-    print(f"Owner:{pet['owner']}")
+    print(f"Owner:{pet['owner']}") 
+# Exercise 9: Favorite Places
+favorite_places = {
+    "yeahu": ["mumbai", "goa", "delhi"],
+    "mikasa": ["tokyo", "kyoto"],
+    "sanjey": ["pokhara", "kathmandu", "chitwan"]
+}
+
+for person4, places in favorite_places.items():
+    print(f"\n{person4.title()}'s favorite places are:")
+    for place in places:
+        print(f"  - {place.title()}")
+
+print("\n" + "="*40 + "\n")  # ✅ Don't assign this to favorite_numbers
+
+# Exercise 6-10: Favorite Numbers
+favorite_numbers = {
+    "kashish": [18, 23],
+    "deepson": [11, 35],
+    "hari": [3, 34],
+    "kalam": [8, 37],
+    "rohan": [9, 67]
+}
+
+for person_name, numbers in favorite_numbers.items():
+    print(f"\n{person_name.title()}'s favorite numbers are:")
+    for num in numbers:
+        print(f"  - {num}")
