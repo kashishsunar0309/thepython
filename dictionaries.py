@@ -165,3 +165,39 @@ for person_name, numbers in favorite_numbers.items():
     print(f"\n{person_name.title()}'s favorite numbers are:")
     for num in numbers:
         print(f"  - {num}")
+#execise 6-11 to 6-12
+cities = {
+    'Kathmandu':{
+        "population":'3,009,000',
+        "country":"Nepal",
+        'fact': 'biggest city and also capital city'
+    },
+    'San Jose':{
+        "population":'4,000,000',
+        "country":"USA",
+        'fact':' a biggest city in USA for tech sector'
+        },
+    
+    'New_Delhi':{
+        "population":'33,000,000',
+        "country":'India',
+        "fact": ' a biggest city in india also capital city with huge development'    
+        }
+}
+for city, city_info in cities.items():
+    print(f"city_names:{city}")
+    print(f"\t Country: {city_info['country'].title()}")
+    print(f"\t Population: {city_info['population']}")
+    print(f"\t Fact: {city_info['fact'].capitalize()}")
+    print()
+print("==== 6-12 ======")
+fav_language  ={
+    'ros':['c','c++'],
+    'kas':['django','rust'],
+    'kri':['python','java'],
+    'ras':['javascript','c#'],
+}
+for name00,language_info in fav_language.items():
+    print(f"names:{name00}")
+    for  languages in language_info:
+        print(f"\t{languages.title()}")
