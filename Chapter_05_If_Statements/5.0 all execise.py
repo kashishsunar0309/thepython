@@ -133,7 +133,7 @@ for user in lists:
 print("")
 
 print("===== no user condition ====")   
-user=[""]  # empty list
+user=[""]  # empty list so that why its so error i do because question is neccessary
 if user:
     for users in user:
         print(f"hello, {user}")
