@@ -25,3 +25,39 @@ if number % 2 == 0:
     print("even")
 else:
     print("odd")
+#the while loop in action execise 
+current_number = 1
+while current_number<=5:
+    print(current_number)
+    current_number +=1
+#letting the user choose when to quit
+prompt= "\n Tell me something , and I will repeat it back to you: "
+prompt+="\n Enter 'quit' to end the program. "
+message = ""
+while message != 'quit':
+    message = input(prompt)
+    print(message)
+#2 with using if statement
+prompt= "\n Tell me something , and I will repeat it back to you: "
+prompt+="\n Enter 'quit' to end the program. "
+message = ""
+while message != 'quit':
+    message = input(prompt)
+    if message != 'quit':
+        print(message)
+#using break to Exist a loop
+prompt= "\n please tell me the name of a city you have visited : "
+prompt+="\n Enter 'quit' when you finished : "
+while True:
+    city = input(prompt)
+    if city == 'quit':
+        break
+    else:
+        print(f"I'd love to go to {city.title()}!")
+#using continue in a loop
+current_number = 0
+while current_number <10:
+    current_number +=1
+    if current_number %2 == 0:
+        continue
+    print(current_number)
