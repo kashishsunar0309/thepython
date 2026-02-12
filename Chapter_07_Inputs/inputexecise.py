@@ -61,3 +61,35 @@ while current_number <10:
     if current_number %2 == 0:
         continue
     print(current_number)
+#moving Items from one list to Another
+
+unconfirmed_users = ['alice','brian','candace']
+confirmed_users = []
+while unconfirmed_users:
+    current_user = unconfirmed_users.pop()
+    print(f"Verifying users : {current_user.title()}")
+    confirmed_users.append(current_user)
+print("\n The following users have been confirmed:")
+for confirmed_user in confirmed_users:
+    print(confirmed_user.title())
+#Removing All instance of specific value from a list
+pets = ['cat','dog','mouse','rabbit','cat','cow','penguien']
+print(pets)
+print()
+while "cat" in pets :
+    pets.remove('cat')   
+print("== the list of cat remove===")
+print(pets)
+#feeling a dictonary with user Input
+responses ={}
+polling_active = True
+while polling_active:
+    name = input("\nwhat is your name ?: ")
+    response= input("\n which mountain would you like to climb someday : ")
+    responses[name]=response
+    repeat = input("\n would you like  to let another person respond? (yes/no):   ")
+    if repeat == "no":
+        polling_active =False
+    print("\n == polling Results == ")
+    for name, response in responses.items():
+        print(f"{name} would you like to climb {response},") 
