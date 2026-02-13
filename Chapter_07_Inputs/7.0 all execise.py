@@ -112,3 +112,55 @@ while x <= 5:
     print(x)
     # Missing: x += 1 (this would fix the infinite loop)
 """
+"""
+Deli Sandwich Maker
+A program that processes sandwich orders and moves them to finished sandwiches.
+"""
+#7-8
+# List of sandwich orders
+sandwich_orders = ["cheese", "vegetarian", "chicken", "veg+meat", "tuna"]
+finished_sandwiches = []
+
+print("=== Deli Sandwich Maker ===\n")
+
+# Process each sandwich order
+while sandwich_orders:
+    current_sandwich = sandwich_orders.pop()
+    print(f"I made your {current_sandwich.title()} sandwich.")
+    finished_sandwiches.append(current_sandwich)
+# Display all finished sandwiches
+print("\n=== Finished Sandwiches ===")
+for sandwich in finished_sandwiches:
+    print(f"- {sandwich.title()}")
+#7-9
+"""
+No Pastrami - Deli runs out of pastrami
+"""
+
+# Sandwich orders with pastrami
+sandwich_orders = ["cheese", "pastrami", "vegetarian", "pastrami", "chicken", "veg+meat", "pastrami"]
+
+print("Sorry! The deli has run out of pastrami.")
+
+# Remove all pastrami
+while "pastrami" in sandwich_orders:
+    sandwich_orders.remove("pastrami")
+
+print(sandwich_orders)
+#7-10
+response = {}
+polling_active = True
+
+while polling_active:
+    name = input("What is your name boss? \n")
+    place = input("Which is your fav place to visit? \n")  # Changed variable name
+    response[name] = place  # Store in dictionary
+    
+    repeat = input("Would you like to let another person respond? yes/no: ")
+    if repeat == "no":
+        polling_active = False
+
+# This part is OUTSIDE the while loop (unindent it)
+print("\n==== Poll Results ====")
+for name, place in response.items():  # Use .items() not .title()
+    print(f"{name} would like to visit {place}.")
