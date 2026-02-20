@@ -102,3 +102,34 @@ while True:
         break
     formatted_name1 = get_formatted_name4(f_name1, l_name1)
     print(f"\nHello, {formatted_name1}!")
+#passing a list
+def greet_user1(name):
+    for names in name:
+        message = f"Hello ,{names.title()}!"
+        print(message)
+username = ("kash","ish","boss")
+greet_user1(username)
+#modifying a list in a function
+unprinted_design = ['phonecase','dodecahedron','robot pendant']
+complete_design = []
+while unprinted_design:
+    current_design = unprinted_design.pop()
+    print(f"the design is {current_design}")
+    complete_design.append(current_design)
+    
+print("\n===== The following code for complete design  ====")
+for complete_designs in complete_design:
+    print(complete_designs)
+# using function of list 
+def print_model(unprinted_design,complete_design):
+    while unprinted_design:
+        current_design = unprinted_design.pop()
+        print(f"the unprinted thing are : {current_design}")
+        complete_design.append(current_design)
+def model_complete_design(complete_design):
+    for complete_designs in complete_design:
+        print(complete_designs)
+unprinted_design = ['kashish','ram','shyam']
+complete_design= [""]
+print_model(unprinted_design,complete_design)
+model_complete_design(complete_design)
