@@ -69,3 +69,44 @@ while True:
         break
 
     print(make_album(artist, title))
+#8-9 message 
+def show_message1(names):
+    for name in names:
+        message = f"Hello, {name.title()}!"
+        print(message)
+the_message = ["theworld","helloworld","thesystem"]
+show_message1(the_message)
+#8-10 
+def message(show_message,send_message):
+    while show_message:
+        current_message = show_message.pop()
+        print(f"Upload :{current_message}")
+        send_message.append(current_message)
+def show_complete_message(send_message):
+        print("==== for send_mesage loop====")
+        for send_messages in send_message:
+            print(send_messages)
+            
+show_message = ["theworld", "helloworld", "thesystem"] 
+send_message = [""]
+message(show_message,send_message)
+show_complete_message(send_message)
+#8-11 Archived Messages
+def show_messages(messages):
+    for message in messages:
+        print(message)
+
+def send_messages(messages, sent_messages):
+    while messages:
+        current_message = messages.pop()
+        print(f"Sending: {current_message}")
+        sent_messages.append(current_message)
+
+messages = ['theworld', 'helloworld', 'thesystem']
+sent_messages = [""]
+
+# Pass a COPY of messages using messages[:]
+send_messages(messages[:], sent_messages)
+
+print("\nOriginal messages list:", messages)    
+print("Sent messages list:", sent_messages)
