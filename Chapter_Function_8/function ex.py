@@ -133,3 +133,33 @@ unprinted_design = ['kashish','ram','shyam']
 complete_design= [""]
 print_model(unprinted_design,complete_design)
 model_complete_design(complete_design)
+#passing an Arbitrary number of Arguments
+def make_pizza(*toppings):
+    print(toppings)
+make_pizza("chicken-pizza")
+make_pizza("tomato_pizza","extra_cheese_pizza",'mushrooms')
+print("New line ====: program====")
+
+#with loop
+def make_pizza1(*toppings):
+    print("\n the new line of topping_pizza ")
+    for topping in toppings:
+        print(f"~{topping}")
+make_pizza1("chicken-pizza")
+make_pizza1("tomato_pizza","extra_cheese_pizza",'mushrooms')
+#Mixing positional and Arbitirary Arguments
+def make_pizza2(size,*toppings):
+    print(f"\n Making the {size}, of the topping pizza")
+    for topping1 in toppings:
+        print(f"#{topping1}")
+make_pizza2(16,"chicken-pizza")
+make_pizza2(18,"tomato_pizza","extra_cheese_pizza",'mushrooms')
+#Using arbitary Keyword Arguments
+def build_profile(first,last,**user_info):
+    user_info['first_name']=first
+    user_info["last_name"]= last
+    return user_info
+user_profile = build_profile("albert",'einstein',
+                             location = "princeton",
+                             field = "physics" )
+print(user_profile)
