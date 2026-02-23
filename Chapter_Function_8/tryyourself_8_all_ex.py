@@ -110,3 +110,24 @@ send_messages(messages[:], sent_messages)
 
 print("\nOriginal messages list:", messages)    
 print("Sent messages list:", sent_messages)
+#8-12
+def person(*sandwiches):
+    print("\nYour sandwich will have the following toppings:")
+    print(sandwiches)
+person('cream-pie')
+person("chicken",'vegetable','chilly')
+person('ham', 'cheese', 'lettuce', 'tomato')
+#8-13
+def build_profile_1(first_name,last_name,**user_info):
+    user_info['First']= first_name
+    user_info['Last']= last_name
+    return user_info
+user_profile = build_profile_1('deepson','shreepali',location='austria',field='computer&IT',sport = "Football")
+print(user_profile)
+#8-14
+def make_car(manufacturer,model,**car_info):
+    car_info['Name'] = manufacturer
+    car_info['Last']=model
+    return car_info
+car = make_car("subaru","outback",color='blue',tow_package=True)
+print(car)
