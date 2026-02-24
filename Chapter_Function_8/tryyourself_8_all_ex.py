@@ -131,3 +131,18 @@ def make_car(manufacturer,model,**car_info):
     return car_info
 car = make_car("subaru","outback",color='blue',tow_package=True)
 print(car)
+#storing your functions in modules
+def make_pizza_7(size, *toppings):
+    print(f"\n Making a {size}-inch pizza with the following toppings:")
+    for topping in toppings:
+        print(f"-{topping}")
+#import pizza 
+"""
+while using the import that access the file name pizza.py which is
+for storing your functions in modules save name as pizza.py which 
+access by import for long program i used comment for import line in 139
+"""
+#pizza.{same line in 146}
+make_pizza_7(16, 'pepperoni')
+#pizza.{same line in 148}
+make_pizza_7(12, "mushrooms", "green peppers", "extra cheese")
