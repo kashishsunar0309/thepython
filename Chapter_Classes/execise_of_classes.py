@@ -7,5 +7,10 @@ class Dog:
     def rool_over(self):
         print(f"{self.name} roolled over! ")
 my_dog = Dog('Willie',6)
+your_dog = Dog('lucy',3)
 print(f"My dog's name is {my_dog.name}.")
 print(f"My dog is {my_dog.age} years old.")
+#multiple Instance
+print(f"\n Your dog's name is {your_dog.name}")
+print(f"Your dog is {your_dog.age}years old.")
+your_dog.sit
