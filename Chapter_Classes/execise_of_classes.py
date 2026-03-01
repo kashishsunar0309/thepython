@@ -14,3 +14,17 @@ print(f"My dog is {my_dog.age} years old.")
 print(f"\n Your dog's name is {your_dog.name}")
 print(f"Your dog is {your_dog.age}years old.")
 your_dog.sit
+#working with classes and instances
+#The car class
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def get_descriptive_name(self):
+        long_name = f"{self.year} {self.make} {self.model}"
+        return long_name.title()
+
+my_new_car = Car('audi', 'a4', 2024)
+print(my_new_car.get_descriptive_name())
