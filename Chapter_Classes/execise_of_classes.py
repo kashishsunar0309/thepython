@@ -29,16 +29,27 @@ class Car:
 my_new_car = Car('audi', 'a4', 2024)
 print(my_new_car.get_descriptive_name())
 #setting a default value of a attribute
-class car:
-    def __init__(self,make,model,year):
+class Vehicle:
+    def __init__(self, make, model, year):
         self.make = make
         self.model = model
         self.year = year
         self.odometer_reading = 0
+
     def get_descriptive_name(self):
-        return f"{self.make}{self.model}{self.year}"
+        return f"{self.year} {self.make} {self.model}"
+
     def read_odometer(self):
-        print(f"This car has {self.odometer_reading}miles on it.")
-my_new_car1 = car('bmw','m4','2022')
-print(my_new_car1.get_descriptive_name())
-my_new_car1.read_odometer()
+        print(f"This vehicle has {self.odometer_reading} miles on it.")
+
+    def update_odometer(self, mileage):
+        self.odometer_reading = mileage
+
+
+my_new_vehicle = Vehicle('porsche', 'A4', 2020)
+
+print(my_new_vehicle.get_descriptive_name())
+
+my_new_vehicle.update_odometer(23)
+
+my_new_vehicle.read_odometer()
