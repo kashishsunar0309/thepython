@@ -10,6 +10,7 @@ my_dog = Dog('Willie',6)
 your_dog = Dog('lucy',3)
 print(f"My dog's name is {my_dog.name}.")
 print(f"My dog is {my_dog.age} years old.")
+my_dog.sit()
 #multiple Instance
 print(f"\n Your dog's name is {your_dog.name}")
 print(f"Your dog is {your_dog.age}years old.")
@@ -37,8 +38,18 @@ class Car:
 
     def increment_odometer(self, miles):
         self.odometer_reading += miles
-
-
+#Inheritance
+class ElectricCar(Car):
+    def __init__(self,make,model,year):
+        super().__init__(make,model,year)
+        #attributes and method for child for the class
+        self.battery_size =40
+    def describe_battery(self):
+        print(f"This car has a {self.battery_size}-kwh battery.")
+my_leaf = ElectricCar('nissan','leaf',2024)#Inheritance
+print(my_leaf.get_descriptive_name)
+my_leaf.describe_battery()
+print(my_leaf.get_descriptive_name())
 my_new_car = Car('porsche', 'A4', 2020)
 print(my_new_car.get_descriptive_name())
 my_new_car.update_odometer(23)
@@ -49,4 +60,5 @@ print(my_used_car.get_descriptive_name())
 my_used_car.update_odometer(23_500)
 my_used_car.read_odometer()
 my_used_car.increment_odometer(100)
-my_used_car.read_odometer
+my_used_car.read_odometer()
+
