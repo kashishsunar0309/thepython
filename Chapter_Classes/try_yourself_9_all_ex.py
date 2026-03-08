@@ -65,7 +65,7 @@ class User:
         self.login_attempts = 0
 
     def describe_user(self):
-        print(f"\nUser Profile:")
+        print("\nUser Profile:")
         print(f"  Name:     {self.first_name} {self.last_name}")
         print(f"  Age:      {self.age}")
         print(f"  Email:    {self.email}")
