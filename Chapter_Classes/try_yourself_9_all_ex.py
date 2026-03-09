@@ -105,3 +105,38 @@ print(f"Login attempts after 2 more: {user.login_attempts}")
 
 user.reset_login_attempts()
 print(f"Login attempts after reset: {user.login_attempts}")
+
+#9-6
+class IceCreamStand(Restaurant):
+    def __init__(self,restaurant_name,cuisine_type = 'Ice Cream'):
+        super().__init__(restaurant_name,cuisine_type)
+        self.flavors = []
+    def display_flavors(self):
+        print(f"WELCOME to {self.restaurant_name}!")
+        print("We currently have the following flavors available ")
+        for flavor in self.flavors:
+            print(f"- {flavor}")
+print()
+print("=== Exercise 9-6: Ice Cream Stand ===")
+my_stand = IceCreamStand('Chilly Treats')
+my_stand.flavors = ["Madagascar Vanilla", "Midnight Chocolate", "Rocky Road", "Mango Sorbet"]
+my_stand.display_flavors()
+
+#9-7
+class Admin(User):
+    def __init__(self,first_name,last_name,age,email,location):
+        super().__init__(first_name,last_name,age,email,location)
+        self.privelages = [
+            "can add post", 
+            "can delete post", 
+            "can ban user", 
+            "can reset passwords"
+        ]
+    def show_privileges(self):
+        print(f"\n Adminstritive Privages {self.first_name}:")
+        for privilege in self.privelages:
+            print(f"-{privilege}")
+print("\n=== Exercise 9-7: Admin ===")
+admin_user = Admin("Dominic", "Stone", 32, "d.stone@system.com", "London")
+admin_user.describe_user()
+admin_user.show_privileges()
