@@ -140,3 +140,47 @@ print("\n=== Exercise 9-7: Admin ===")
 admin_user = Admin("Dominic", "Stone", 32, "d.stone@system.com", "London")
 admin_user.describe_user()
 admin_user.show_privileges()
+#9-8
+class Privileges:
+    def __init__(self,privileges=[]):
+        self.privileges = privileges if privileges else[
+        "can add post","can delete post","can ban user"]
+    def show_privileges(self):
+        print("\n Privileges: ")
+        for privilege in self.privileges:
+            print(f"- {privilege}")
+class Admin1(User):
+    def __init__(self,first_name,last_name,age,email,location):
+        super().__init__(first_name,last_name,age,email,location)
+        self.privileges = Privileges()
+#== Testing c0de ===
+print('\n --- Execise 9-8: Privileges class---')
+new_admin = Admin1('sarah','conor',45,'ram@gmail.com','new-delhi')
+new_admin.privileges.show_privileges()
+#9-9
+class Battery:
+    def __init__(self,battery_size =40):
+        self.battery_size = battery_size
+    def get_range(self):
+        if self.battery_size == 40:
+            range = 150
+        elif self.battery_size == 65:
+            range = 225
+        print(f"This car can go about {range} miles on a full charge.")
+    def upgrade_battery(self):
+        if self.battery_size <65:
+            print("Upgrading the battery to 65 KWH.")
+            self.battery_size = 65
+        else:
+            print("Battery is already upgraded. ")
+class ElectriCar(Restaurant):
+    def __init__(self,make,model,year):
+        self.battery = Battery()
+#====Testing 9-9 ======
+print("\n === Execise 9-9 : Battery Upgrade ===")
+my_tesla = ElectriCar("Tesla",'Model-3',2024)
+print("Checking range with default battery: ")
+my_tesla.battery.get_range()
+my_tesla.battery.upgrade_battery()
+print("Checking range after upgrade.")
+my_tesla.battery.get_range()
