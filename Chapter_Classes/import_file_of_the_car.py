@@ -1,3 +1,8 @@
+#random standard library
+from random import choice
+player = ['kashish','ram','shyam','deepson','tara','kalam']
+first_up = choice(player)
+first_up
 '''from the_car import Car
 my_new_car = Car('audi','a4',2024)
 print(my_new_car.get_descriptive_name())
@@ -29,10 +34,10 @@ my_admin.describe_user()
 # Show the privileges (from Privileges class via the Admin class)
 my_admin.privileges.show_privileges()
 """
+"""
 from the_car import Admin
-
 the_boss = Admin('Dominic', 'Stone', 35, 'd.stone@admin.com', 'Chicago')
-
 # This call works because of the inheritance across modules!
 the_boss.describe_user()
 the_boss.privileges.show_privileges()
+"""
