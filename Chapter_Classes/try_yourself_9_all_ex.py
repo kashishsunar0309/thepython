@@ -184,3 +184,45 @@ my_tesla.battery.get_range()
 my_tesla.battery.upgrade_battery()
 print("Checking range after upgrade.")
 my_tesla.battery.get_range()
+#9-13 Dice project using class
+'''from random import randint
+
+class Die:
+    def __init__(self, sides=6):
+        self.sides = sides
+
+    def roll_die(self):
+        number = randint(1, self.sides)
+        print(number)
+        
+my_die = Die(6)
+print("Rolling 10 times:")
+for i in range(10): 
+    my_die.roll_die()
+    ''' 
+    # I make that class comment because it need to use of
+    # import in top show for execise i used here in all ex like {9-13 to 9-15}
+#9-14 This project is for lottery ticket from python using classes
+'''
+from random import choice
+pool = [12,34,54,23,65,76,56,'A','B','C','D','E']
+winning_ticket = []
+for i in range(4):
+    pulled_item = choice(pool)
+    winning_ticket.append(pulled_item)
+print(f"Any ticket matching {winning_ticket} wins a prize! ")
+'''
+#9-15 loterry analysis in how many time i get lottery using classes
+"""from random import choice
+pool = [1,2,3,4,5,6,7,8,9,"a",'b','c','d','e','f']
+my_ticket = [2,5,'f','c']
+count = 0
+won = False
+while not won :
+    count = count+1
+    current_draw = []
+    for i in range(4):
+        current_draw.append(choice(pool))
+    if current_draw == my_ticket:
+        won = True
+print(f"It took {count} tries to win! ")"""
