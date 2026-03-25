@@ -21,3 +21,21 @@ path = Path('programing.txt')
 #writing multi line file
 path.write_text(contents)
 """
+#print(5\0) Don't run so, using try-except blocks
+"""
+try:
+    print(5/0)
+except ZeroDivisionError:
+    print("You can't divide by zero.")
+    """
+print("Give me two number, and I'll divide them.")
+print("Enter 'q' to quit.")
+while True:
+    first_number = input("\n First number: ")
+    if first_number == 'q':
+        break
+    second_number = input("\n Second number: ")
+    if second_number == 'q':
+        break
+    answer = int(first_number)/ int(second_number)
+    print(answer)
