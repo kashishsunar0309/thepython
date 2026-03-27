@@ -1,4 +1,4 @@
-from pathlib import Path
+"""from pathlib import Path
 path = Path('pi_digits.txt')
 contents = path.read_text()
 lines = contents.splitlines()
@@ -11,6 +11,7 @@ if birthday in pi_string:
 else:
     print('Your birthday doesnot appear in the first million digits of pi.')
 #second execise of file and exception.
+"""
 """from pathlib import Path
 contents = "I love programming.\n"
 contents += 'I love creating new games.\n'
@@ -27,7 +28,8 @@ try:
     print(5/0)
 except ZeroDivisionError:
     print("You can't divide by zero.")
-    """
+"""
+"""
 print("Give me two number, and I'll divide them.")
 print("Enter 'q' to quit.")
 while True:
@@ -37,5 +39,31 @@ while True:
     second_number = input("\n Second number: ")
     if second_number == 'q':
         break
-    answer = int(first_number)/ int(second_number)
-    print(answer)
+    #THE ELSE BL0CK
+    try :
+        answer = int(first_number)/ int(second_number)
+    except ZeroDivisionError:
+        print("You can't divide by 0! ")
+    else:
+        print(answer)'''
+#Handling the FileNOtFoundError Exception
+from pathlib import Path
+path = Path('alice.txt')
+try:
+  contents = path.read_text(encoding = "uft - 8")
+except FileNotFoundError:
+  print(f"Sorry, the file  {path} doesn't exist.")
+#ANALYZING TEXT
+#(https://gutenberg.org) for Project Gutenberg for work with literary text. IMPORTANT FOR BELOW ELSE CODE.
+from pathlib import Path
+path = Path('alice.txt')
+try:
+ contents = path.read_text(encoding='utf-8')
+except FileNotFoundError:
+ print(f"Sorry, the file {path} does not exist.")
+else:
+ # Count the approximate number of words in the file:
+  words = contents.split()
+  num_words = len(words)
+  print(f"The file {path} has about {num_words} words.")
+"""
