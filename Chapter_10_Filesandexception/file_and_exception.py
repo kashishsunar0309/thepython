@@ -67,3 +67,41 @@ else:
   num_words = len(words)
   print(f"The file {path} has about {num_words} words.")
 """
+#multiple files
+"""
+from pathlib import Path
+def count_words(filename):
+#Count the appreciate number of words in a file
+    try:
+        contents = filename.read_text(encoding = 'utf-8')
+    except FileNotFoundError:
+        print(f"Sorry, the file {filename} doesn't exist ")
+    else:
+        words = contents.split()
+        num_words = len(words)
+        print(f"The  file {filename} has about {num_words} words.")
+# analyze of multiple file
+filenames = ['alice.txt','moby.txt','siddhartha.txt','kashish.txt']
+#before we run this program you should file with nameoffile.txt
+for filename in filenames:
+    path = Path(filename)
+    count_words(path)
+#Falling silently
+
+from pathlib import Path
+def count_words(filename):
+#Count the appreciate number of words in a file
+    try:
+        contents = filename.read_text(encoding = 'utf-8')
+    except FileNotFoundError:
+        pass
+    else:
+        words = contents.split()
+        num_words = len(words)
+        print(f"The  file {filename} has about {num_words} words.")
+filenames = ['alice.txt','moby.txt','siddhartha.txt','kashish.txt']
+#before we run this program you should file with nameoffile.txt
+for filename in filenames:
+    path = Path(filename)
+    count_words(path)
+    """
