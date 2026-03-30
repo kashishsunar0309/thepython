@@ -77,3 +77,46 @@ while True:
         print(f"The Total is : {result}")
     print("-"*20)
 print("Goodbye!")'''
+#10-8:
+"""
+from pathlib import Path
+filenames = ["cats.txt","dogs.txt"]
+for filename in filenames:
+    path = Path(filename)
+    print(f"\n Reading file: {filename}")
+    try:
+        contents = path.read_text()
+    except FileNotFoundError:
+        #This cathes the errors if you moved or deleted the file.
+        print(f"Error : The file '{filename}' was not found.")
+    else:
+        print(contents)
+#10-9:
+try:
+    contents = path.read_text()
+    print(contents)
+except FileNotFoundError:
+    #'pass' tells python. "I know there's an error, just keep going."
+    pass
+"""
+#10-10
+"""
+from pathlib import Path
+def count_words(filename,word):
+    '''Count the approximate number of times a word appears in a file'''
+    path = Path(filename)
+    try:
+        contents = path.read_text(encoding = "utf-8")
+    except FileNotFoundError:
+        print(f"Sorry , the file {filename} doesn't exit")
+    else:
+        #count 'the' (include words like 'then','there','them')
+        word_count = contents.lower().count(word)
+        #Count 'the' with a space (more likely to be just the word 'the')
+        strict_count = contents.lower().count(f"{word}")
+        print(f"File : {filename}")
+        print(f"Searching for '{word}':(with space): {strict_count} matches.")
+files = ['cats.txt','dogs.txt']
+for file in files:
+    count_words(file,'the')
+    """
