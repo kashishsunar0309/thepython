@@ -1,4 +1,5 @@
 #10-1
+"""
 from pathlib import Path
 path = Path('learning_python.txt')
 contents = path.read_text()
@@ -20,7 +21,8 @@ path = Path('learning_python.txt')
 contents = path.read_text()
 for line in contents.splitlines():
     print(line.replace('Python','C'))
-    """"
+"""
+"""
 #10-4
 from pathlib import Path
 name = input("What's is your name: ")
