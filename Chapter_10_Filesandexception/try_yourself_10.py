@@ -122,3 +122,38 @@ files = ['cats.txt','dogs.txt']
 for file in files:
     count_words(file,'the')
     """
+#For run this program you should file like file_name.json.
+#for json.dump file
+"""from pathlib import Path
+import json
+numbers = [2,5,6,7,8,9,56,45,34,23,78]
+path = Path("numbers.json")
+contents = json.dumps(numbers)
+path.write_text(contents)
+"""
+#for json.upload file
+"""
+from pathlib import Path
+import json
+path = Path('numbers.json')
+contents = path.read_text()
+number = json.loads(contents)
+print(number)
+"""
+#Saving and reading User-Generated Data
+"""
+from pathlib import Path
+import json
+username = input("What's your name? ")
+path = Path("username.json")
+contents = json.dumps(username)
+path.write_text(contents)
+print(f"We'll remember you when you come back,{username}")
+#for json.upload 
+from pathlib import Path
+import json
+path = Path("username.json")
+contents = path.read_text()
+username = json.loads(contents)
+print(f"Welcome back, {username}")
+"""
