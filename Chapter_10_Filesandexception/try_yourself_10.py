@@ -157,3 +157,62 @@ contents = path.read_text()
 username = json.loads(contents)
 print(f"Welcome back, {username}")
 """
+#10-11
+'''
+from pathlib import Path
+import json
+fav_num = int(input("Enter the number: "))
+path = Path('fav_num.json')
+contents = json.dumps(fav_num)
+path.write_text(contents)
+print(f"I know your favorite number it's {fav_num} ?")
+#10-12
+path = Path('fav_num.json')
+contents = path.read_text()
+numbers = json.loads(contents)
+print(fav_num)
+'''
+#10-13
+'''
+from pathlib import Path
+import json
+path = Path('user_info.json')
+if path.exists():
+    user = json.loads(path.read_text())
+else:
+    user = {}
+    user['username'] = input("What's is your name: ")
+    user['city'] = input("What city are you from ?")
+    user['language'] = input("What's your favorite programming language?")
+    path.write_text(json.dumps(user))
+print(" \n Here's what I remember about you:")
+print(f" Username: {user['username']}")
+print(f"City: {user['city']}")
+print(f"Favorite language: {user['language']}")
+'''
+#10-14
+'''
+from pathlib import Path
+import json
+def get_stored_username(path):
+    if path.exists():
+        return json.loads(path.read_text())
+    return None
+def get_new_username(path):
+    username = input("What's your name?: ")
+    path.write_text(json.dumps(username))
+    return username
+def greet_user():
+    path = Path('username.json')
+    username = get_stored_username(path)
+    if username:
+        confirm = input(f"Are you {username}?(yes/no): ")
+        if confirm.lower() == 'yes':
+            print(f"Welcome back, {username}!")
+        else:
+            username = get_new_username(path)
+            print(f"We'll remember you when you come back,{username}!")
+    else:
+        username = get_new_username(path)
+        print(f"We'll remember you when you come back, {username}!")
+greet_user()'''    
