@@ -16,11 +16,5 @@ while True:
     formatted_name = get_formated_name(first,last)
     print(f"\t Nearly formatted name: {formatted_name}.")
 '''
-'''#Assertion Programm
-#before run this program you should create a file name alway_pratice
-#inside alway_practice file created function get_formated_name
-from alway_pratice import get_formated_name
-def test_first_last_name():
-    formatted_name = get_formated_name('janis','joplin')
-    assert formatted_name == 'Janis Joplin'''
+
     
