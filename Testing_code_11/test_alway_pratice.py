@@ -16,5 +16,20 @@ while True:
     formatted_name = get_formated_name(first,last)
     print(f"\t Nearly formatted name: {formatted_name}.")
 '''
-
+#A failing Test
+'''
+def get_formated_name(first,middle,last):
+    "Generate a neatly formatted full name."
+    full_name = f"{first}{middle}{last}"
+    return full_name.title()
+'''
+#Resoponding to a failed test
+"""
+def get_formated_name(first,last,middle = ''):
+    if middle:
+        full_name = f"{first} {middle} {last}"
+    else:
+        full_name = f"{first} {last}"
+    return full_name.title()
+"""
     
