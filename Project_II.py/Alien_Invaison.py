@@ -1,4 +1,4 @@
-"""import sys
+"""import sys #This for the screen of the pygame code which we most memoraize and but not all
 import pygame
 class AlienInvasion:
     #Over all class to manage game assets and behavior.
@@ -25,27 +25,42 @@ if __name__ == "__main__":
     ai = AlienInvasion()
     ai.run_game()
 """
+#that another example of for display of like the first one comment code of top
+#but here is new file from there i import that settings as you can see in line 3.
 import sys
 import pygame
 from settings import Settings
+from ship import Ship
+
 class AlienInvasion:
     def __init__(self):
-        #Initialize the game, and create game resources
+        # Initialize the game, and create game resources
         pygame.init()
         self.clock = pygame.time.Clock()
         self.settings = Settings()
-        self.screen = pygame.time.Clock()
-        self.screen = pygame.display.set_mode((self.settings.screen_width,self.settings.screen_height))
+        self.screen = pygame.display.set_mode(
+            (self.settings.screen_width, self.settings.screen_height)
+        )
         pygame.display.set_caption("Alien Invasion")
+        self.ship = Ship(self)
+
     def run_game(self):
-         while True:
+        while True:
+            # Watch for keyboard and mouse events
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     sys.exit()
-                    self.screen.fill(self.settings.bg_color)
-                    pygame.display.flip()
-                    self.clock.tick(60)
+
+            # Redraw the screen each pass through the loop
+            self.screen.fill(self.settings.bg_color)
+            self.ship.blitme()
+
+            # Make the most recently drawn screen visible
+            pygame.display.flip()
+            self.clock.tick(60)
+
+
 if __name__ == "__main__":
-    #Make a game instance, and run the game.
+    # Make a game instance, and run the game
     ai = AlienInvasion()
     ai.run_game()
