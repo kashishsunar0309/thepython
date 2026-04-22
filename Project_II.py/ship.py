@@ -12,14 +12,12 @@ class Ship:
         # Load the ship image and get its rect
         self.image = pygame.image.load(os.path.join(os.path.dirname(__file__), "image", "alien.png"))
          #Resize the image (change 100, 100 to whatever size you want)
-        self.image = pygame.transform.scale(self.image, (80,80))
+        self.image = pygame.transform.scale(self.image, (100,100))
 
         #Convert transparency properly so background shows through
         self.image = self.image.convert_alpha()
-
         self.rect = self.image.get_rect()
-        self.rect = self.image.get_rect()
-
+        
         # Start each new ship at the bottom center of the screen
         self.rect.midbottom = self.screen_rect.midbottom
         #store a float for the ship's exact horizontal position.
