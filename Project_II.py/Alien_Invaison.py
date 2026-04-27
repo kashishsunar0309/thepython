@@ -53,6 +53,8 @@ class AlienInvasion:
         #Start a new game when the player clicks Play.
         button_clicked = self.play_button.rect.collidepoint(mouse_pos)
         if button_clicked and not self.game_active:
+            #Reset the game settings.
+            self.settings.initialize_dynamic_settinngs()
             #Reset the game statistics.
             self.stats.reset_stats()
             self.game_active = True
@@ -98,7 +100,7 @@ class AlienInvasion:
             #Destory existing bullets and create new fleet.
             self.bullets.empty()
             self._create_fleet()
-
+            self.settings.increase_speed()
     def _create_fleet(self):
         alien = Alien(self)
         alien_width, alien_height = alien.rect.size
@@ -157,6 +159,7 @@ class AlienInvasion:
         #Look for alien_ship collisions.
         if pygame.sprite.spritecollideany(self.ship,self.aliens):
             self.ship_hit()
+            self._check_aliens_bottom()
 
     def _update_screen(self):
         self.screen.fill(self.settings.bg_color)
