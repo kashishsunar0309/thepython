@@ -160,11 +160,10 @@ class AlienInvasion:
     def _update_aliens(self):
         self._check_fleet_edges()
         self.aliens.update()
-        #Look for alien_ship collisions.
+    #Look for alien-ship collisions.
         if pygame.sprite.spritecollideany(self.ship,self.aliens):
-            self.ship_hit()
+            self._ship_hit()
             self._check_aliens_bottom()
-
     def _update_screen(self):
         self.screen.fill(self.settings.bg_color)
         for bullet in self.bullets.sprites():
