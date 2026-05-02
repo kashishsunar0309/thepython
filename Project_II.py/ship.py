@@ -1,10 +1,12 @@
 import pygame
 import os
-class Ship:
+from pygame.sprite import Sprite
+class Ship(Sprite):
     """A class to manage the ship"""
 
     def __init__(self, ai_game):
         """Initialize the ship and set its starting position"""
+        super().__init__()
         self.screen = ai_game.screen
         self.screen_rect = ai_game.screen.get_rect()
         self.settings = ai_game.settings
@@ -12,7 +14,7 @@ class Ship:
         # Load the ship image and get its rect
         self.image = pygame.image.load(os.path.join(os.path.dirname(__file__), "image", "alien.png"))
          #Resize the image (change 100, 100 to whatever size you want)
-        self.image = pygame.transform.scale(self.image, (100,100))
+        self.image = pygame.transform.scale(self.image, (75,75))
 
         #Convert transparency properly so background shows through
         self.image = self.image.convert_alpha()
