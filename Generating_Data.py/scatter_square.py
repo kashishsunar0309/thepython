@@ -10,5 +10,5 @@ ax.set_xlabel("Value",fontsize = 15)
 ax.set_ylabel("Square of Value", fontsize = 15)
 #Set size of trick labels.
 ax.tick_params(labelsize = 14)
-ax.axis([0, 1100, 0, 1_100_000])# [xmin, xmax, ymin, ymax]
+'''ax.axis([0, 1100, 0, 1_100_000])'''# [xmin, xmax, ymin, ymax]
 plt.show()
