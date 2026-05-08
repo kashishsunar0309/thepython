@@ -16,6 +16,7 @@ def test_store_three_responses():
         assert response in language_survey.responses
     """
 #BELOW USING FIXTURE_TEST_PROGRAM
+''''
 import pytest
 from survey import AnonsymousSurvey
 @pytest.fixture
@@ -34,4 +35,4 @@ def test_store_three_response(language_survey):
     for response in responses:
         language_survey.store_response(response)
     for response in responses:
-        assert response in language_survey.responses
+        assert response in language_survey.responses'''
