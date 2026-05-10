@@ -7,7 +7,7 @@ while True:
     fig, ax = plt.subplots()
     plt.style.use('classic')
     point_numbers = range(rw.num_points)
-    ax.scatter(rw.x_values, rw.y_values, c= point_numbers, cmap='Blues',
+    ax.scatter(rw.x_values, rw.y_values, c= point_numbers, cmap='Wistia',
                edgecolors = 'none',s=15)
     ax.scatter(rw.x_values, rw.y_values, s=15)
     ax.set_aspect('equal')
