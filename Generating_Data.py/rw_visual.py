@@ -4,6 +4,9 @@ from random_walk import RandomWalk
 while True:
     rw = RandomWalk(50_000)
     rw.fill_walk()
+    #This two are option fig, ax ....{
+    #fig, ax = plt.subplots(figsize = (15,9))
+    #fig, ax = plt.subplots(figsize = (15,9),dpi = 128)}'''
     fig, ax = plt.subplots()
     plt.style.use('classic')
     point_numbers = range(rw.num_points)
