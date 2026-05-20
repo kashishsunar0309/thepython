@@ -1,6 +1,5 @@
 from pathlib import Path
 import csv
-
 path = Path('detail.csv')
 lines = path.read_text().splitlines()
 reader = csv.reader(lines)
