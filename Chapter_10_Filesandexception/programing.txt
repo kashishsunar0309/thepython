@@ -1,0 +1,4 @@
+I love programming.
+I love creating new games.
+I also love working with data.
+#this came for second execise of file and exception where path.write_text(var)
