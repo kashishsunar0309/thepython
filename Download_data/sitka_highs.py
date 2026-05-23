@@ -28,7 +28,7 @@ ax.plot(highs,color = 'red')
 ax.plot(highs, color='red')
 
 # Format plot
-ax.set_title("Daily High Temperature, July 2021", fontsize=24)
+ax.set_title("Daily High Temperature, 2021", fontsize=24)
 ax.set_xlabel('', fontsize=16)
 fig.autofmt_xdate()
 ax.set_ylabel("Temperature (F)", fontsize=16)
