@@ -7,6 +7,7 @@ class RandomWalk:
         self.num_points = num_points
         self.x_values = [0]
         self.y_values = [0]
+#Network crash reset
 #15-5   
     def get_step(self):
         direction = choice([1,-1])
