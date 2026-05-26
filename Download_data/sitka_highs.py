@@ -28,7 +28,7 @@ plt.style.use('seaborn-v0_8')
 fig, ax = plt.subplots()
 ax.plot(highs, color='red', alpha=0.5)          # remove duplicate
 ax.plot(lows, color='blue', alpha=0.5)
-ax.fill_between(range(len(highs)), highs, lows, facecolor='green', alpha=0.4)
+ax.fill_between(range(len(highs)), highs, lows, facecolor='green', alpha=0.9)
 # Format plot
 ax.set_title("Daily High Temperature and Low Temperature, 2021", fontsize=24)
 ax.set_xlabel('', fontsize=16)
