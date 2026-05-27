@@ -16,7 +16,7 @@ for row in reader:
 
 plt.style.use('seaborn-v0_8')
 fig, ax = plt.subplots()
-ax.bar(dates, prcps, color='blue')
+ax.bar(dates, prcps, color='blue') #Dates is not a error but that is warning for code .
 
 ax.set_title("Daily Rainfall - Sitka, AK 2021", fontsize=16)
 ax.set_xlabel('', fontsize=12)
