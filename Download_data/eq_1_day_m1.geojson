@@ -1,0 +1,642 @@
+{
+    "type": "FeatureCollection",
+    "metadata": {
+        "generated": 1700000000000,
+        "title": "USGS Magnitude 1.0+ Earthquakes, Past Day",
+        "status": 200,
+        "api": "1.10.3",
+        "count": 30
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 1.6,
+                "place": "15 km NNE of Ridgecrest, CA",
+                "time": 1700000001000,
+                "updated": 1700000100000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci1001",
+                "title": "M 1.6 - 15 km NNE of Ridgecrest, CA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.6267,
+                    35.7603,
+                    10.2
+                ]
+            },
+            "id": "ci1001"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 2.3,
+                "place": "30 km SE of Anchorage, AK",
+                "time": 1700000002000,
+                "updated": 1700000200000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak1002",
+                "title": "M 2.3 - 30 km SE of Anchorage, AK"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -149.5406,
+                    61.0628,
+                    25.0
+                ]
+            },
+            "id": "ak1002"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 3.5,
+                "place": "10 km W of Hilo, HI",
+                "time": 1700000003000,
+                "updated": 1700000300000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/hv1003",
+                "title": "M 3.5 - 10 km W of Hilo, HI"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -155.1711,
+                    19.7297,
+                    5.0
+                ]
+            },
+            "id": "hv1003"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.7,
+                "place": "89 km SSW of Tofino, Canada",
+                "time": 1700000004000,
+                "updated": 1700000400000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us1004",
+                "title": "M 4.7 - 89 km SSW of Tofino, Canada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -126.4500,
+                    48.7500,
+                    15.0
+                ]
+            },
+            "id": "us1004"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.2,
+                "place": "120 km E of Tokyo, Japan",
+                "time": 1700000005000,
+                "updated": 1700000500000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us1005",
+                "title": "M 5.2 - 120 km E of Tokyo, Japan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.8760,
+                    35.6762,
+                    35.0
+                ]
+            },
+            "id": "us1005"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 6.1,
+                "place": "Off the coast of Oregon",
+                "time": 1700000006000,
+                "updated": 1700000600000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us1006",
+                "title": "M 6.1 - Off the coast of Oregon"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -128.3000,
+                    44.5000,
+                    10.0
+                ]
+            },
+            "id": "us1006"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 2.8,
+                "place": "25 km NW of Las Vegas, NV",
+                "time": 1700000007000,
+                "updated": 1700000700000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nn1007",
+                "title": "M 2.8 - 25 km NW of Las Vegas, NV"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.2398,
+                    36.2780,
+                    5.0
+                ]
+            },
+            "id": "nn1007"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 1.2,
+                "place": "5 km S of Mammoth Lakes, CA",
+                "time": 1700000008000,
+                "updated": 1700000800000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci1008",
+                "title": "M 1.2 - 5 km S of Mammoth Lakes, CA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.9720,
+                    37.6148,
+                    8.0
+                ]
+            },
+            "id": "ci1008"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 3.9,
+                "place": "50 km NE of Christchurch, New Zealand",
+                "time": 1700000009000,
+                "updated": 1700000900000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nz1009",
+                "title": "M 3.9 - 50 km NE of Christchurch, New Zealand"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    172.8260,
+                    -43.2500,
+                    12.0
+                ]
+            },
+            "id": "nz1009"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.8,
+                "place": "80 km SW of Lima, Peru",
+                "time": 1700000010000,
+                "updated": 1700001000000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us1010",
+                "title": "M 5.8 - 80 km SW of Lima, Peru"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.4200,
+                    -12.5000,
+                    50.0
+                ]
+            },
+            "id": "us1010"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.2,
+                "place": "Near the coast of Chile",
+                "time": 1700000011000,
+                "updated": 1700001100000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us1011",
+                "title": "M 4.2 - Near the coast of Chile"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.5430,
+                    -33.4570,
+                    30.0
+                ]
+            },
+            "id": "us1011"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 2.1,
+                "place": "10 km ENE of Pawnee, OK",
+                "time": 1700000012000,
+                "updated": 1700001200000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ok1012",
+                "title": "M 2.1 - 10 km ENE of Pawnee, OK"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -96.6890,
+                    36.3370,
+                    5.0
+                ]
+            },
+            "id": "ok1012"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 6.5,
+                "place": "200 km SE of Fiji",
+                "time": 1700000013000,
+                "updated": 1700001300000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us1013",
+                "title": "M 6.5 - 200 km SE of Fiji"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    179.4000,
+                    -20.0000,
+                    400.0
+                ]
+            },
+            "id": "us1013"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 3.3,
+                "place": "35 km NW of Fairbanks, AK",
+                "time": 1700000014000,
+                "updated": 1700001400000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak1014",
+                "title": "M 3.3 - 35 km NW of Fairbanks, AK"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -148.0200,
+                    65.0100,
+                    18.0
+                ]
+            },
+            "id": "ak1014"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 1.8,
+                "place": "12 km SW of El Centro, CA",
+                "time": 1700000015000,
+                "updated": 1700001500000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci1015",
+                "title": "M 1.8 - 12 km SW of El Centro, CA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.6300,
+                    32.7000,
+                    10.0
+                ]
+            },
+            "id": "ci1015"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 7.1,
+                "place": "250 km E of Sendai, Japan",
+                "time": 1700000016000,
+                "updated": 1700001600000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us1016",
+                "title": "M 7.1 - 250 km E of Sendai, Japan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    144.3000,
+                    38.2700,
+                    35.0
+                ]
+            },
+            "id": "us1016"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.4,
+                "place": "Near the coast of Indonesia",
+                "time": 1700000017000,
+                "updated": 1700001700000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us1017",
+                "title": "M 4.4 - Near the coast of Indonesia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    128.1800,
+                    -3.6500,
+                    22.0
+                ]
+            },
+            "id": "us1017"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 2.6,
+                "place": "45 km N of Eureka, CA",
+                "time": 1700000018000,
+                "updated": 1700001800000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc1018",
+                "title": "M 2.6 - 45 km N of Eureka, CA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -124.1600,
+                    41.2000,
+                    15.0
+                ]
+            },
+            "id": "nc1018"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.0,
+                "place": "150 km S of Mexico City, Mexico",
+                "time": 1700000019000,
+                "updated": 1700001900000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us1019",
+                "title": "M 5.0 - 150 km S of Mexico City, Mexico"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.1330,
+                    17.8000,
+                    20.0
+                ]
+            },
+            "id": "us1019"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 3.7,
+                "place": "60 km W of Reykjavik, Iceland",
+                "time": 1700000020000,
+                "updated": 1700002000000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us1020",
+                "title": "M 3.7 - 60 km W of Reykjavik, Iceland"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.5000,
+                    64.1355,
+                    10.0
+                ]
+            },
+            "id": "us1020"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 1.4,
+                "place": "8 km NE of Volcano, HI",
+                "time": 1700000021000,
+                "updated": 1700002100000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/hv1021",
+                "title": "M 1.4 - 8 km NE of Volcano, HI"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -155.2000,
+                    19.4500,
+                    2.0
+                ]
+            },
+            "id": "hv1021"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.9,
+                "place": "Near Kathmandu, Nepal",
+                "time": 1700000022000,
+                "updated": 1700002200000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us1022",
+                "title": "M 4.9 - Near Kathmandu, Nepal"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    85.3240,
+                    27.7172,
+                    10.0
+                ]
+            },
+            "id": "us1022"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 2.4,
+                "place": "20 km SE of Albuquerque, NM",
+                "time": 1700000023000,
+                "updated": 1700002300000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nm1023",
+                "title": "M 2.4 - 20 km SE of Albuquerque, NM"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -106.5000,
+                    35.0000,
+                    8.0
+                ]
+            },
+            "id": "nm1023"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 6.8,
+                "place": "100 km NW of Santiago, Chile",
+                "time": 1700000024000,
+                "updated": 1700002400000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us1024",
+                "title": "M 6.8 - 100 km NW of Santiago, Chile"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.8000,
+                    -32.5000,
+                    60.0
+                ]
+            },
+            "id": "us1024"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 3.1,
+                "place": "40 km S of Adak, AK",
+                "time": 1700000025000,
+                "updated": 1700002500000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak1025",
+                "title": "M 3.1 - 40 km S of Adak, AK"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -176.6500,
+                    51.4500,
+                    30.0
+                ]
+            },
+            "id": "ak1025"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.5,
+                "place": "Near the coast of Greece",
+                "time": 1700000026000,
+                "updated": 1700002600000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us1026",
+                "title": "M 5.5 - Near the coast of Greece"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    22.3000,
+                    37.9800,
+                    15.0
+                ]
+            },
+            "id": "us1026"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 1.9,
+                "place": "3 km W of Calipatria, CA",
+                "time": 1700000027000,
+                "updated": 1700002700000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci1027",
+                "title": "M 1.9 - 3 km W of Calipatria, CA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5400,
+                    33.1250,
+                    6.0
+                ]
+            },
+            "id": "ci1027"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.6,
+                "place": "70 km NE of Tehran, Iran",
+                "time": 1700000028000,
+                "updated": 1700002800000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us1028",
+                "title": "M 4.6 - 70 km NE of Tehran, Iran"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    52.0000,
+                    36.0000,
+                    20.0
+                ]
+            },
+            "id": "us1028"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 2.9,
+                "place": "15 km SW of Bozeman, MT",
+                "time": 1700000029000,
+                "updated": 1700002900000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/mb1029",
+                "title": "M 2.9 - 15 km SW of Bozeman, MT"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.1500,
+                    45.6000,
+                    10.0
+                ]
+            },
+            "id": "mb1029"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.3,
+                "place": "300 km NW of Manila, Philippines",
+                "time": 1700000030000,
+                "updated": 1700003000000,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us1030",
+                "title": "M 5.3 - 300 km NW of Manila, Philippines"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.5000,
+                    17.6000,
+                    45.0
+                ]
+            },
+            "id": "us1030"
+        }
+    ]
+}
