@@ -32,7 +32,7 @@ for repo_dict in repo_dicts:
 
     # Build hover texts with owner and description
     owner = repo_dict['owner']['login']
-    description = repo_dict['description']
+    description = repo_dict['description'] 
     hover_text = f"{owner}<br />{description}"
     hover_texts.append(hover_text)
 
@@ -41,7 +41,7 @@ title = "Most-Starred Python Projects on GitHub"
 labels = {'x': 'Repository', 'y': 'Stars'}
 
 # Create bar chart with hover data (fixed: hover_data instead of hover_name)
-fig = px.bar(x=repo_names, y=stars, title=title, labels=labels, hover_data=[hover_texts])
+fig = px.bar(x=repo_names, y=stars, title=title, labels=labels, hover_name= hover_texts)
 
 # Update font sizes for title and axes
 fig.update_layout(title_font_size=28, xaxis_title_font_size=20, yaxis_title_font_size=20)
