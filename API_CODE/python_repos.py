@@ -21,13 +21,15 @@ print(f"Complete results: {not response_dict['incomplete_results']}")
 
 # Explore information about the repositories
 repo_dicts = response_dict['items']
-repo_names, stars, hover_texts = [], [], []
+repo_links, stars, hover_texts = [], [], []
 
 # Examine each repository in the results
 for repo_dict in repo_dicts:
-    # Collect repository name
-    repo_names.append(repo_dict['name'])
-    # Collect star count
+    #Turn repo names into active links
+    repo_name = repo_dict['name']
+    repo_url = repo_dict['html_url']
+    repo_link = f"<a href='{repo_url}'> {repo_name}</a>"
+    repo_links.append(repo_link)
     stars.append(repo_dict['stargazers_count'])
 
     # Build hover texts with owner and description
@@ -41,7 +43,7 @@ title = "Most-Starred Python Projects on GitHub"
 labels = {'x': 'Repository', 'y': 'Stars'}
 
 # Create bar chart with hover data (fixed: hover_data instead of hover_name)
-fig = px.bar(x=repo_names, y=stars, title=title, labels=labels, hover_name= hover_texts)
+fig = px.bar(x=repo_links, y=stars, title=title, labels=labels, hover_name= hover_texts)
 
 # Update font sizes for title and axes
 fig.update_layout(title_font_size=28, xaxis_title_font_size=20, yaxis_title_font_size=20)
