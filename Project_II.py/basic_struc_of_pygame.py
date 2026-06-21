@@ -1,4 +1,4 @@
-"""import sys #This for the screen of the pygame code which we most memoraize and but not all
+#import sys #This for the screen of the pygame code which we most memoraize and but not all
 import pygame
 class AlienInvasion:
     #Over all class to manage game assets and behavior.
@@ -24,4 +24,3 @@ if __name__ == "__main__":
     #Make a game instance, and run the game.
     ai = AlienInvasion()
     ai.run_game()
-"""
